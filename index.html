@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Cristian Schwatz</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburguer-nav">
+        <div class="logo">Cristian Schwatz</div>
+        <div class="hamburguer-menu">
+            <div class="hamburguer-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Sobre mim</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+            </div>
+        </div>
+    </nav>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/profile_image.png" alt="Foto perfil">
+            </div>
+            <div class="section__text">
+                <p class="section__text_p1">Olá, sou</p>
+                <h1 class="title">Cristian Schwatz</h1>
+                <p class="section__text_p2">Desenvolvedor de Software</p>
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color2" 
+                    onclick="window.open('./assets/curriculo.pdf')"
+                    >
+                        Currículo
+                    </button>
+                    <button class="btn btn-color1" onclick="location.href='./#contact'">
+                        Contato
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img
+                        src="./assets/linkedin.png"
+                        alt="Meu perfil do Linkedin"
+                        class="icon"
+                        onclick="location.href='https://www.linkedin.com/in/cristian-ricardo-schwatz-741987191/'"
+                    />
+                    <img
+                        src="./assets/github.png"
+                        alt="Meu perfil do Github"
+                        class="icon"
+                        onclick="location.href='https://github.com/cschwatz'"
+                    />
+                </div>
+            </div>
+        </section>
+        <hr id="section-break">
+        <section id="about">
+            <h1 class="title">Sobre mim</h1>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                            src="./assets/experience.png" 
+                            alt="ícone de experiência" 
+                            class="icon" 
+                        />
+                        <h3>Experiência</h3>
+                        <p> 4 anos -- Engenheiro de Processos</p>
+                        <p>< 1 ano -- Desenvolvedor de Software</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                            src="./assets/education.png" 
+                            alt="ícone de educação" 
+                            class="icon"
+                        />
+                        <h3>Educação</h3>
+                        <p>
+                            Bacharel em Engenharia Química (2018)
+                            <br />
+                            Mestrado em Engenharia Química (2020)
+                            <br />
+                            Cursando Engenharia de Software (2023 - Presente)
+                        </p>
+                    </div>
+                </div>
+                    <div class="text-container">
+                        <p id="about-me-text">
+                            Sou um Engenheiro Químico com graduação e mestrado pela Universidade Regional de Blumenau (SC),
+                            que está realizando a transição de carreira para a área de TI. Iniciei minha jornada no mundo da
+                            programação aprendendo de forma independente e após um ano de aprendizado ingressei novamente no 
+                            ensino superior, iniciando meus estudos em Engenharia de Software na UNINTER (2023). Atualmente 
+                            atuo como estagiário de desenvolvimento backedn na empresa Senior Sistemas, na cidade de Blumenau 
+                            (SC). A stack utilizada neste estágio é, em sua maioria, volta para backend, como Java/Springboot 
+                            e PostgreSQL, além de tecnologias para testes unitários, como JUnit e Mockito.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img 
+                src="./assets/arrow.png" 
+                alt="ícone de seta" 
+                class="icon arrow" 
+                onclick="location.href='./#experience'"
+            />
+        </section>
+        <hr id="section-break">
+        <section id="experience">
+            <h1 class="title">Experiência</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Frontend</h2>
+                        <div class="article-container">
+                            <article>
+                                <img 
+                                    src="./assets/checkmark.png" 
+                                    alt="Experience icon" 
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Médio</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                    src="./assets/checkmark.png" 
+                                    alt="Experience icon" 
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Médio</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                    src="./assets/checkmark.png" 
+                                    alt="Experience icon" 
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>Javascript</h3>
+                                    <p>Médio</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                    src="./assets/checkmark.png" 
+                                    alt="Experience icon" 
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>React</h3>
+                                    <p>Básico</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                            />
+                                <div>
+                                    <h3>Redux</h3>
+                                    <p>Básico</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Backend</h2>
+                        <div class="article-container">
+                            <article>
+                                <img 
+                                    src="./assets/checkmark.png" 
+                                    alt="Experience icon" 
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>Java</h3>
+                                    <p>Médio</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                    src="./assets/checkmark.png" 
+                                    alt="Experience icon" 
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>SpringBoot</h3>
+                                    <p>Básico</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                    src="./assets/checkmark.png" 
+                                    alt="Experience icon" 
+                                    class="icon"
+                                    />
+                                <div>
+                                    <h3>Node JS</h3>
+                                    <p>Básico</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                    src="./assets/checkmark.png" 
+                                    alt="Experience icon" 
+                                    class="icon"
+                                    />
+                                <div>
+                                    <h3>Express JS</h3>
+                                    <p>Básico</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img 
+                src="./assets/arrow.png" 
+                alt="ícone de seta" 
+                class="icon arrow" 
+                onclick="location.href='./#projects'"
+            />
+        </section>
+        <hr id="section-break">
+        <section id="projects">
+            <h1 class="title">Projetos</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img 
+                            src="./assets/projeto-1.png" 
+                            alt="Projeto 1" 
+                            class="project-img"
+                        />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Jogo RPG em Python</h2>
+                        <div class="btn-container">
+                            <button 
+                                class="btn btn-color2 project-btn" 
+                                onclick="location.href='https://github.com/cschwatz/Cat_vs_Slimes'"
+                            >
+                            Github
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img 
+                            src="./assets/project-2.png" 
+                            alt="Projeto 2" 
+                            class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Aplicação Fullstack</h2>
+                        <div class="btn-container">
+                            <button 
+                                class="btn btn-color2 project-btn" 
+                                onclick="location.href='https://github.com/cschwatz/FullStackOpen/tree/master/part7'"
+                                >
+                                Github
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <img 
+            src="./assets/arrow.png" 
+                alt="ícone de seta" 
+                class="icon arrow" 
+                onclick="location.href='./#contact'"
+            />
+        </section>
+        <hr id="section-break">
+        <section id="contact">
+            <h1 class="title">Contatos</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img 
+                        src="./assets/email.png" 
+                        alt="ícone do email" 
+                        class="icon contact-icon email-icon"
+                    />
+                    <!-- Propriedade mailto do html permite o envio de emails diretamente para a ref no anchor -->
+                    <p><a href="mailto:crschwatz@gmail.com">crschwatz@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img 
+                        src="./assets/linkedin.png" 
+                        alt="ícone linkedin"
+                        class="icon contact-icon"
+                    />
+                    <p><a href="https://www.linkedin.com/in/cristian-ricardo-schwatz-741987191/">Linkedin</a></p>
+                </div>
+            </div>
+            <form class="contact-form-section">
+                <div class="contact-form-message">
+                    <p class="section__text_p2">Me contate:</p>
+                </div>
+                <div class="contact-form-container">
+                    <div>
+                        <label>Nome:</label>
+                        <input class="form" type="text"
+                        />
+                    </div>
+                    <div>
+                        <label>E-mail:</label>
+                        <input class="form" type="email"
+                        />
+                    </div>
+                    <div>
+                        <label>Mensagem:</label>
+                        <textarea class="form" rows="5" cols="30"></textarea>
+                    </div>
+                </div>
+                <div class="contact-form-button">
+                    <div class="btn-container">
+                        <h2></h2>
+                        <button 
+                            type="submit"
+                            class="btn btn-color1"
+                        >
+                        Enviar
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">Sobre mim</a></li>
+                        <li><a href="#experience">Experiência</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2024 Cristian Schwatz. All Rights Reserved.</p>
+        </footer>
+    <script src="script.js"></script> 
+</body>
+</html>
